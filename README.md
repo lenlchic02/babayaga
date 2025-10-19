@@ -1,8 +1,5 @@
 название кнопки "Сгенирировать" - pushButton
+
 design.ui -->  condesign "import subprocess
 subprocess.run(["pyuic6", "desing.ui", "-o", "desing.py"])"
---> design  -->  desing.kod
-название кнопки "Сгенирировать" - pushButton
-design.ui -->  condesign "import subprocess
-subprocess.run(["pyuic6", "desing.ui", "-o", "desing.py"])"
---> design  -->  desing.kod
+--> design  -->  desingkod
