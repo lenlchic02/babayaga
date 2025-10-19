@@ -1,4 +1,3 @@
-print("kjghhjtg")
-a = 4 + 2
+import subprocess
 
-b = 10 - 8
+subprocess.run(["pyuic6", "design.ui", "-o", "design.py"])
