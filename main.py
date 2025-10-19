@@ -1,4 +1,7 @@
-print("kjghhjtg")
-a = 4 + 2
+import json
 
-b = 10 - 8
+class MainWindow():
+    def __init__(self):
+        super().__init__()
+
+window = MainWindow()
