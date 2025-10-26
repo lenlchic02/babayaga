@@ -1,40 +1,24 @@
+from tkinter import Checkbutton
+
 from PyQt6.QtCore import QDate
 from PyQt6.QtWidgets import (QApplication, QTableWidgetItem, QMainWindow)
-
 from mainWindow_ui import Ui_MainWindow
-
+import random
 
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
+        self.ABC = {"T", 'Y', 'G', 'B', 'S', "J", "3", '8', '2', '5', '1', "7"}
+        self.ui.pushButton.clicked.connect(self.password)
+    def password(self, i):
+        ABC_keys_list = list(self.ABC)
+        random_key = random.choice(ABC_keys_list)
+        for i in range(4):
+            self.ui.lineEdit.setText(random_key)
 
 app = QApplication([])
 window = MainWindow()
 window.show()
 app.exec()
-
-import random
-import string
-
-def generate_password(length=12, use_uppercase=True, use_numbers=True, use_special=True):
-
-    characters = string.ascii_lowercase
-
-    if use_uppercase:
-        characters += string.ascii_uppercase
-    if use_numbers:
-        characters += string.digits
-    if use_special:
-        characters += string.punctuation
-
-    if not characters:
-        raise ValueError("Должен быть выбран хотя бы один тип символов")
-
-    password = ''.join(random.choice(characters) for _ in range(length))
-    return password
-
-print("Случайный пароль:", generate_password())
-print("Пароль из 8 символов:", generate_password(8))
-print("Простой пароль (только буквы):", generate_password(use_numbers=False, use_special=False))
