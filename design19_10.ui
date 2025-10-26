@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>280</width>
-    <height>242</height>
+    <width>312</width>
+    <height>274</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>-20</x>
+      <x>0</x>
       <y>0</y>
       <width>571</width>
       <height>341</height>
@@ -35,7 +35,7 @@
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>70</x>
+       <x>60</x>
        <y>0</y>
        <width>191</width>
        <height>21</height>
@@ -59,8 +59,8 @@
     <widget class="QPushButton" name="pushButton">
      <property name="geometry">
       <rect>
-       <x>70</x>
-       <y>90</y>
+       <x>60</x>
+       <y>120</y>
        <width>191</width>
        <height>31</height>
       </rect>
@@ -82,8 +82,8 @@ background-color: rgb(208, 233, 255);</string>
     <widget class="QLineEdit" name="lineEdit">
      <property name="geometry">
       <rect>
-       <x>70</x>
-       <y>160</y>
+       <x>50</x>
+       <y>190</y>
        <width>191</width>
        <height>31</height>
       </rect>
@@ -95,8 +95,8 @@ background-color: rgb(208, 233, 255);</string>
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
-       <x>70</x>
-       <y>130</y>
+       <x>60</x>
+       <y>160</y>
        <width>191</width>
        <height>21</height>
       </rect>
@@ -116,42 +116,127 @@ background-color: rgb(208, 233, 255);</string>
       <string>Здесь появится пароль</string>
      </property>
     </widget>
-    <widget class="QRadioButton" name="radioButton">
+    <widget class="QCheckBox" name="checkBox">
      <property name="geometry">
       <rect>
-       <x>70</x>
+       <x>50</x>
        <y>30</y>
-       <width>171</width>
-       <height>17</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>NewsGoth BT</family>
-       <pointsize>10</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Добавить спец. символы</string>
-     </property>
-    </widget>
-    <widget class="QRadioButton" name="radioButton_2">
-     <property name="geometry">
-      <rect>
-       <x>70</x>
-       <y>60</y>
        <width>131</width>
        <height>17</height>
       </rect>
      </property>
+     <property name="text">
+      <string>Английские символы</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_2">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>60</y>
+       <width>111</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Русские символы</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_3">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>30</y>
+       <width>70</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Цифры</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_4">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>60</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Спец. символы</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>190</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>icons8-сохранить-40.png</normaloff>icons8-сохранить-40.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>25</width>
+       <height>25</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>90</y>
+       <width>160</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>90</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
      <property name="font">
       <font>
-       <family>NewsGoth BT</family>
+       <family>NewsGoth Lt BT</family>
        <pointsize>10</pointsize>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(69, 75, 124);</string>
+     </property>
      <property name="text">
-      <string>Добавить цифры</string>
+      <string>Длина</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>90</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> 0</string>
      </property>
     </widget>
    </widget>
@@ -161,7 +246,7 @@ background-color: rgb(208, 233, 255);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>280</width>
+     <width>312</width>
      <height>21</height>
     </rect>
    </property>
