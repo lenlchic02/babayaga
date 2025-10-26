@@ -1,3 +1,20 @@
+from PyQt6.QtCore import QDate
+from PyQt6.QtWidgets import (QApplication, QTableWidgetItem, QMainWindow)
+
+from mainWindow_ui import Ui_MainWindow
+
+
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.ui = Ui_MainWindow()
+        self.ui.setupUi(self)
+
+app = QApplication([])
+window = MainWindow()
+window.show()
+app.exec()
+
 import random
 import string
 
