@@ -18,3 +18,4 @@ def write(name):
 write(text)
 
 #Наслаждаемся результатом 
+,e,e,e,,e,e,
